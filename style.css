@@ -1,4 +1,23 @@
-body {
+body{
     background-color:rgb(6, 126, 52);
-    
+    font-family: "Verdana", sans-serif;
+}
+
+.info{
+    font-size: 1000%;
+    text-align: center;
+    text-shadow: 5px 5px 7px;
+}
+
+.info-small{
+    font-size: 7px;
+    text-align: center;
+    color: rgb(2, 120, 73);
+}
+
+
+.border{
+    border: 10px ridge rgb(2, 82, 64);
+    background-color: rgb(2, 117, 73);
+    box-shadow: 0px 0px 100px;
 }
