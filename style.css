@@ -16,8 +16,15 @@ body{
 }
 
 
-.border{
+#border{
     border: 10px ridge rgb(2, 82, 64);
     background-color: rgb(2, 117, 73);
     box-shadow: 0px 0px 100px;
+    margin-bottom: 7px;
+}
+
+#kompy{
+    border: 5px solid rgb(2, 82, 64);
+    background-color: rgb(2, 117, 73);
+    text-shadow: 1px 1px 2px;
 }
