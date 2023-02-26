@@ -3,6 +3,9 @@ body{
     background-color: black;
     color: white;
 }
+footer{
+    text-align: center;
+}
 nav ul li{
     display: inline;
 }
@@ -31,7 +34,8 @@ nav a:hover{
     background-color: white;
     padding: 8px 18px;
     border-radius: 20px 20px 20px 20px;
-    color: black;}
+    color: black;
+}
 h1{
     text-align: center;
 }
@@ -63,7 +67,4 @@ main a{
 }
 main a:hover{
     background-image: linear-gradient(white, bisque);
-}
-footer{
-    text-align: center;
 }
