@@ -1,5 +1,7 @@
 body{
     font-family: "Arial", sans-serif;
+    background-color: black;
+    color: white;
 }
 nav ul li{
     display: inline;
@@ -9,7 +11,7 @@ nav{
     padding-bottom: 30px;
 }
 nav ul li:nth-child(1){
-    color: black;
+    color: white;
     font-family: "Arial Black";
     font-size: 24px;
 }
@@ -18,18 +20,18 @@ nav a{
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
-    color: black;
-    border: 2px solid white;
+    color: white;
+    border: 2px solid black;
     border-radius: 5px 10px 5px 10px;
     padding: 0px 18px;
     background-color: none;
     transition: padding 500ms, border-radius 250ms, border 750ms, background-color 250ms, color 400ms;
 }
 nav a:hover{
-    background-color: black;
+    background-color: white;
     padding: 8px 18px;
     border-radius: 20px 20px 20px 20px;
-    color: white;}
+    color: black;}
 h1{
     text-align: center;
 }
@@ -39,4 +41,26 @@ main{
 }
 #emo{
     width: 40%;
+}
+.ulinul{
+    list-style-type: square;
+}
+.ulinul li{
+    margin-bottom: 10px;
+}
+main a{
+    font-family: Arial;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    padding: 4px 12px;
+    border-radius: 20px 20px 20px 20px;
+    color: black;
+    transition: background-color 600ms, background-image 900ms;
+}
+main a:hover{
+    background-image: linear-gradient(white, bisque);
 }
