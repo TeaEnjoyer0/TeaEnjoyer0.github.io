@@ -1,2 +1,2 @@
-# TeaEnjoyer0.github.io
-https://TeaEnjoyer0.github.io
+# About
+just simply website available at https://TeaEnjoyer0.github.io
