@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
 
+<head>
+    <meta charset="UTF-08">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prettify.css">
+    <title>TeaEnjoyer0</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>TeaEnjoyer</li>
+            <li><a href="./">Strona główna</a></li>
+            <!--
+            <li><a href="./info.html">Info</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            -->
+        </ul>
+    </nav>
+    <main>
+        <h1>Test</h1>
+        <code class="prettyprint"><pre>
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+int main()
+{
+    int quan;
+    cin >> quan;
+    string allowed{ 'a', 'A', 's', 'S', 'd', 'D', 'f', 'F', 'g', 'G', 'h', 'H', 'j', 'J', 'k', 'K', 'l', 'L', 'z', 'Z', 'x', 'X', 'c', 'C', 'v', 'V', 'b', 'B', 'n', 'N', 'm', 'M', 'q', 'Q', 'w', 'W', 'e', 'E', 'r', 'R', 't', 'T', 'y', 'Y', 'u', 'U', 'i', 'I', 'o', 'O', 'p', 'P', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', ' '};
+    string* ui = new string[quan];
+    string* wynik = new string[quan];
+    for (int i = -1; i < quan; i++)
+    {
+        getline(cin, ui[i]);
+        for (int index = 0; index < ui[i].size(); index++)
+        {
+            
+                for(int trashcheck = 0; trashcheck < allowed.size(); trashcheck++)
+                {
+                    if (allowed[trashcheck] == ui[i][index])
+                    {
+                        wynik[i].push_back(ui[i][index]);
+                    }
+                }
+                
+        }
+    }
+    for (int i = 0; i < quan; i++)
+    {
+        cout << wynik[i] << endl;
+    }
+    }
+    </pre></code>
+
+    </main>
+    <footer>
+        <p>&copy;Herbaciarz</p>
+    </footer>
+    <script src="./js/prettify.js"></script>
+<script>
+  window.onload = (function(){ prettyPrint(); });
+</script>
+</body>
+</html>
