@@ -80,7 +80,7 @@ main a:hover{
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 60px;
-    background-color: white;
+    background-color: rgb(224, 224, 224);
     color: black;
     font-weight: bold;
     text-align: center;
