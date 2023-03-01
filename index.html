@@ -32,7 +32,9 @@
             alt="emotka kciuk w górę">
         <h2>Linki do kont</h2>
         <ul>
-            <li>Discord: TeaEnjoyer#1206</li>
+            <li>Discord: TeaEnjoyer#1206 
+                <div class="tooltip"><button onclick="myFunction()" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy</span><img src="./files/images/clipboard.png" alt="Copy text" height="10px"></button></div></li>
             <li>Osu: <br>
                 <ul class="ulinul">
                     <li>Profile: <a href="https://osu.ppy.sh/users/17503770">ZOXENIX</a></li>
@@ -47,6 +49,18 @@
     <script src="./js/prettify.js"></script>
 <script>
   window.onload = (function(){ prettyPrint(); });
+
+  function myFunction() {
+  navigator.clipboard.writeText("TeaEnjoyer#1206");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied";
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy";
+}
 </script>
 </body>
 </html>
