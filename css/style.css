@@ -63,7 +63,7 @@ main{
 .ulinul li{
     margin-bottom: 10px;
 }
-main .astyle{
+.astyle{
     font-family: Arial;
     font-weight: bold;
     font-style: normal;
@@ -76,7 +76,7 @@ main .astyle{
     color: black;
     transition: background-color 600ms, background-image 900ms;
 }
-main .astyle:hover{
+.astyle:hover{
     background-image: linear-gradient(white, bisque);
 }
 .prettyprint{
