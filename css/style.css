@@ -10,7 +10,7 @@ body{
 }
 @media (prefer-color-scheme: dark){
     body{
-    background-color: black;
+    background-color: rgb(25, 25, 25);
     color: white;
     }
 }
