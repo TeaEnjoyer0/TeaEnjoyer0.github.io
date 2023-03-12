@@ -7,9 +7,12 @@ body{
     background-color: white;
     color: black;
     }
-        nav a:hover{
+    nav a:hover{
     background-color: black;
     color: white;
+    }
+    nav a{
+        color: black;
     }
 }
 @media (prefers-color-scheme: dark){
@@ -20,6 +23,9 @@ body{
     nav a:hover{
     background-color: white;
     color: black;
+    }
+    nav a{
+        color: white;
     }
 }
 footer{
@@ -48,10 +54,8 @@ nav a{
     transition: padding 500ms, border-radius 250ms, border 750ms, background-color 250ms, color 400ms;
 }
 nav a:hover{
-    background-color: white;
     padding: 8px 18px;
     border-radius: 20px 20px 20px 20px;
-    color: black;
 }
 h1{
     text-align: center;
