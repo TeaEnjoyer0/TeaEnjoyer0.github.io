@@ -2,13 +2,13 @@ body{
     font-family: "Arial", sans-serif;
     
 }
-@media (prefer-color-scheme: light){
+@media (prefers-color-scheme: light){
     body{
     background-color: white;
     color: black;
     }
 }
-@media (prefer-color-scheme: dark){
+@media (prefers-color-scheme: dark){
     body{
     background-color: rgb(25, 25, 25);
     color: white;
