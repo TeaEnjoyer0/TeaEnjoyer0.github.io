@@ -90,7 +90,7 @@ main{
     background-image: linear-gradient(white, bisque);
 }
 .prettyprint{
-    background-color:   #ffffffa4;
+    background-color: rgb(13, 17, 23);
     border-radius: 15px;
 }
 .tooltip {
