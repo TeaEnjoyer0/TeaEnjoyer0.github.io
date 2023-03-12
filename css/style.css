@@ -1,7 +1,18 @@
 body{
     font-family: "Arial", sans-serif;
+    
+}
+@media (prefer-color-scheme: light){
+    body{
+    background-color: white;
+    color: black;
+    }
+}
+@media (prefer-color-scheme: dark){
+    body{
     background-color: black;
     color: white;
+    }
 }
 footer{
     text-align: center;
