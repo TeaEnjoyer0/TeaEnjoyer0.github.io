@@ -1,7 +1,32 @@
 body{
     font-family: "Arial", sans-serif;
+    
+}
+@media (prefers-color-scheme: light){
+    body{
+    background-color: white;
+    color: black;
+    }
+    nav a:hover{
     background-color: black;
     color: white;
+    }
+    nav a{
+        color: black;
+    }
+}
+@media (prefers-color-scheme: dark){
+    body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    }
+    nav a:hover{
+    background-color: white;
+    color: black;
+    }
+    nav a{
+        color: white;
+    }
 }
 footer{
     text-align: center;
@@ -14,7 +39,6 @@ nav{
     padding-bottom: 30px;
 }
 nav ul li:nth-child(1){
-    color: white;
     font-family: "Arial Black";
     font-size: 24px;
 }
@@ -23,18 +47,15 @@ nav a{
     font-weight: bold;
     font-style: normal;
     text-decoration: none;
-    color: white;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 5px 10px 5px 10px;
     padding: 0px 18px;
     background-color: none;
     transition: padding 500ms, border-radius 250ms, border 750ms, background-color 250ms, color 400ms;
 }
 nav a:hover{
-    background-color: white;
     padding: 8px 18px;
     border-radius: 20px 20px 20px 20px;
-    color: black;
 }
 h1{
     text-align: center;
@@ -67,7 +88,7 @@ main{
 .ulinul li{
     margin-bottom: 10px;
 }
-main a{
+.astyle{
     font-family: Arial;
     font-weight: bold;
     font-style: normal;
@@ -80,11 +101,11 @@ main a{
     color: black;
     transition: background-color 600ms, background-image 900ms;
 }
-main a:hover{
+.astyle:hover{
     background-image: linear-gradient(white, bisque);
 }
 .prettyprint{
-    background-color:   #ffffffa4;
+    background-color: rgb(13, 17, 23);
     border-radius: 15px;
 }
 .tooltip {
