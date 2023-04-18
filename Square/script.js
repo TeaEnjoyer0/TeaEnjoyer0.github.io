@@ -49,7 +49,7 @@ setTimeout(function()
 {
 x.style.left = Math.floor(Math.random() * 80) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
-}, 500)
+}, 10)
         items.push(x); 
 }
         
