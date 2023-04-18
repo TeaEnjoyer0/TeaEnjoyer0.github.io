@@ -47,9 +47,9 @@ x = document.createElement("div");
 x.style.left = Math.floor(Math.random() * 60) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
 x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
-        items.push(x); 
-      x.style.left = Math.floor(Math.random() * 60) + "dvw";
+x.style.left = Math.floor(Math.random() * 60) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
+        items.push(x); 
 }
         
         for(let i = 0; i < items.length; i++)
