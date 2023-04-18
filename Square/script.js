@@ -35,17 +35,24 @@ setInterval(function()
 {
     if(toggle == false )
     {
-        let x = document.createElement("div");
+let X;
+        if(items.length < 300)
+{
+x = document.createElement("div");
         x.style.width = "128px";
         x.style.height = "128px";
         x.style.backgroundColor = "#252525";
         x.style.position = "absolute";
 x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
         document.body.appendChild(x);
-        x.style.left = Math.floor(Math.random() * 80) + "dvw";
+setTimeout(function()
+{
+x.style.left = Math.floor(Math.random() * 80) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
-    
+}, 500)
         items.push(x); 
+}
+        
         for(let i = 0; i < items.length; i++)
         {
             items[i].style.left = Math.floor(Math.random() * 80) + "dvw";
