@@ -48,7 +48,6 @@ x.style.left = Math.floor(Math.random() * 60) + "dvw";
         x.style.position = "absolute";
 x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
         items.push(x); 
-x.style.visibility = "visible"
       x.style.left = Math.floor(Math.random() * 60) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
 }
