@@ -1,9 +1,4 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-}
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     body{
         background-color: rgb(25, 25, 25);
         color: white;
@@ -29,6 +24,11 @@ body{
         nav a{
             color: black;
         }
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 nav ul li{
