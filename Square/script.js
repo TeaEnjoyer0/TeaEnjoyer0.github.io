@@ -35,7 +35,7 @@ setInterval(function()
 {
     if(toggle == false )
     {
-let X;
+let x;
         if(items.length < 300)
 {
 x = document.createElement("div");
