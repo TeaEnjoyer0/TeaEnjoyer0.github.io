@@ -1,7 +1,21 @@
 let items = new Array();
 let toggle = false;
 
-//how do i get spacebar key to work?
+if ('ontouchstart' in window) {
+  // The device has a touchscreen
+  // Add touch event listener
+  document.addEventListener('touchstart', function(e) {
+    // Handle touch event here
+        if(toggle)
+        {
+            toggle = false;
+        }
+        else
+        {
+            toggle = true;
+        }
+    
+  });
 document.addEventListener("keydown", (e) => {
     if(e.key == " ")
     {
@@ -19,7 +33,7 @@ document.addEventListener("keydown", (e) => {
 
 setInterval(function()
 {
-    if(toggle == false)
+    if(toggle == false )
     {
         let x = document.createElement("div");
         x.style.width = "128px";
