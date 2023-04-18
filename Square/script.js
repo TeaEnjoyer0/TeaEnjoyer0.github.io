@@ -15,7 +15,7 @@ if ('ontouchstart' in window) {
             toggle = true;
         }
     
-  });
+  });}
 document.addEventListener("keydown", (e) => {
     if(e.key == " ")
     {
