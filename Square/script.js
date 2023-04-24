@@ -1,9 +1,9 @@
 let items = new Array();
 let toggle = false;
 let ta = false
-const size = "128px"
-const min = 200
-const max = 200
+const size = "0px"
+const min = 100
+const max = 100
 
 if ('ontouchstart' in window) {
   // The device has a touchscreen
@@ -46,8 +46,8 @@ let x;
 {
 x = document.createElement("div");
         document.body.appendChild(x);
-        x.style.width = size;
-        x.style.height = size;
+        x.style.width = 128px;
+        x.style.height = 128px;
         x.style.backgroundColor = "#252525";
         x.style.position = "absolute";
         if(ta)
