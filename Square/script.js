@@ -49,8 +49,8 @@ x = document.createElement("div");
         x.style.position = "absolute";
         if(ta)
         {
-x.style.left = Math.floor(Math.random() * 60) + "dvw";
-        x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
+x.style.left = Math.floor(Math.random() * 75) + "dvw";
+        x.style.bottom = Math.floor(Math.random() * 75) + "dvh";
         }
         else{
 x.style.left = Math.floor(Math.random() * 90) + "dvw";
