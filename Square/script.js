@@ -2,7 +2,7 @@ let items = new Array();
 let toggle = false;
 let ta = false
 const size = "128px"
-const min = 90, max = 100
+const min = 100, max = 100
 
 if ('ontouchstart' in window) {
   // The device has a touchscreen
