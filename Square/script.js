@@ -1,9 +1,12 @@
 let items = new Array();
 let toggle = false;
+let ta = false
 
 if ('ontouchstart' in window) {
   // The device has a touchscreen
   // Add touch event listener
+  ta = true
+  
   document.addEventListener('touchstart', function(e) {
     // Handle touch event here
         if(toggle)
@@ -44,8 +47,15 @@ x = document.createElement("div");
         x.style.height = "128px";
         x.style.backgroundColor = "#252525";
         x.style.position = "absolute";
+        if(ta)
+        {
 x.style.left = Math.floor(Math.random() * 60) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
+        }
+        else{
+x.style.left = Math.floor(Math.random() * 90) + "dvw";
+        x.style.bottom = Math.floor(Math.random() * 90) + "dvh";
+}
 x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
 x.style.left = Math.floor(Math.random() * 60) + "dvw";
         x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
