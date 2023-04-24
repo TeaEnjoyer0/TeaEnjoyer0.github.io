@@ -46,8 +46,8 @@ let x;
 {
 x = document.createElement("div");
         document.body.appendChild(x);
-        x.style.width = 128px;
-        x.style.height = 128px;
+        x.style.width = "128px";
+        x.style.height = "128px"
         x.style.backgroundColor = "#252525";
         x.style.position = "absolute";
         if(ta)
