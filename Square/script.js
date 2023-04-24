@@ -1,6 +1,8 @@
 let items = new Array();
 let toggle = false;
 let ta = false
+const size = "128px"
+const min = 90, max = 100
 
 if ('ontouchstart' in window) {
   // The device has a touchscreen
@@ -43,29 +45,36 @@ let x;
 {
 x = document.createElement("div");
         document.body.appendChild(x);
-        x.style.width = "128px";
-        x.style.height = "128px";
+        x.style.width = size;
+        x.style.height = size;
         x.style.backgroundColor = "#252525";
         x.style.position = "absolute";
         if(ta)
         {
-x.style.left = Math.floor(Math.random() * 75) + "dvw";
-        x.style.bottom = Math.floor(Math.random() * 75) + "dvh";
+x.style.left = "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
+        x.style.bottom = "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
         }
         else{
-x.style.left = Math.floor(Math.random() * 90) + "dvw";
-        x.style.bottom = Math.floor(Math.random() * 90) + "dvh";
+x.style.left = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size);
+        x.style.bottom = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size)
 }
 x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
-x.style.left = Math.floor(Math.random() * 60) + "dvw";
-        x.style.bottom = Math.floor(Math.random() * 60) + "dvh";
         items.push(x); 
 }
         
         for(let i = 0; i < items.length; i++)
         {
-            items[i].style.left = Math.floor(Math.random() * 60) + "dvw";
-            items[i].style.bottom = Math.floor(Math.random() * 60) + "dvh";
+            if(ta)
+            {
+items[i].style.left = "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
+items[i].style.bottom= "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
+}
+else
+{
+items[i].style.left = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size)
+            items[i].style.bottom = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size)
+}
+            
             items[i].style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
         }
     }
