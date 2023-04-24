@@ -52,12 +52,12 @@ x = document.createElement("div");
         x.style.position = "absolute";
         if(ta)
         {
-x.style.left = "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
-        x.style.bottom = "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
+x.style.left = "calc(" + Math.floor(Math.random() * min) + "%" + "-" + size)
+        x.style.bottom = "calc(" + Math.floor(Math.random() * min) + "%" + "-" + size)
         }
         else{
-x.style.left = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size);
-        x.style.bottom = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size)
+x.style.left = "calc(" + Math.floor(Math.random() * max) + "%" + "-" + size);
+        x.style.bottom = "calc(" + Math.floor(Math.random() * max) + "%" + "-" + size)
 }
 x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
         items.push(x); 
@@ -67,13 +67,13 @@ x.style.transition = "left 500ms, bottom 500ms, background-color 500ms";
         {
             if(ta)
             {
-items[i].style.left = "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
-items[i].style.bottom= "calc(" + Math.floor(Math.random() * min) + "dvw" + "-" + size)
+items[i].style.left = "calc(" + Math.floor(Math.random() * min) + "%" + "-" + size)
+items[i].style.bottom= "calc(" + Math.floor(Math.random() * min) + "%" + "-" + size)
 }
 else
 {
-items[i].style.left = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size)
-            items[i].style.bottom = "calc(" + Math.floor(Math.random() * max) + "dvw" + "-" + size)
+items[i].style.left = "calc(" + Math.floor(Math.random() * max) + "%" + "-" + size)
+            items[i].style.bottom = "calc(" + Math.floor(Math.random() * max) + "%" + "-" + size)
 }
             
             items[i].style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
