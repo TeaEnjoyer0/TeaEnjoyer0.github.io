@@ -1,7 +1,7 @@
 let items = new Array();
 let toggle = false;
 let ta = false
-const size = "0px"
+const size = "8px"
 const min = 100
 const max = 100
 
