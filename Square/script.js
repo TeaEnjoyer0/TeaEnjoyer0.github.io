@@ -34,8 +34,7 @@ document.addEventListener("keydown", (e) => {
             toggle = true;
         }
     }
-    }
-))};
+})};
 
 setInterval(function()
 {
